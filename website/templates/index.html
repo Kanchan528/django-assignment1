@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+	<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<main>
+		<!-- header section starts -->
+		<div class="header">
+			<div class="container">
+				
+				<div class="header-content">
+                    <h1 class="l-font">Welcome to our Food blog!!</h1>
+					
+				</div>
+			</div>
+		</div>
+		<!-- header section ends -->
+
+        {% for item in blog %}
+		<section class="intro">
+    
+			<div class="intro-content">
+                
+				<div class="intro-heading">
+					<h1>{{item.title}} </h1>
+				</div>
+				<div class="intro-image">
+					<img src="{{ item.image.url }}" style="height: 300px; width: 300px;">
+				</div>
+
+				<div class="intro-description">
+					<p>{{ item.description }}</p>
+
+					<h5 style="text-align: right">{{ item.author.name }}</h5>
+					<h6 style="text-align: right">{{ item.created_date }}</h6>
+					<h6 style="text-align: right">{{ item.updated_date }}</h6>
+
+				</div>
+				
+            </div>
+            			
+        </section>
+        {% endfor %}
+	</main>
+
+</body>
+</html>

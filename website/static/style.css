@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap');
+
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+.l-font{
+	font-family: 'Red Rose', cursive;
+	text-transform: uppercase;
+}
+
+body{
+	background-image: url("https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	width: 100%;
+}
+
+main{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%
+}
+.container{
+	width: 80%
+}
+
+.header{
+	height: 100vh;
+	color: black;
+}
+
+.header-content{
+	text-align: center;
+	padding-top: 50vh;
+}
+
+.header-content h1{
+	font-size: 40px;
+}
+
+.intro{
+	background-color: #BEBEBE;
+	padding: 20vh 0;
+	height: 80vh;
+
+}
+
+.intro-content{
+	height: 100vh;
+	margin: 0px 50px;
+
+	
+}
+.intro-heading h1{
+	padding-bottom:15px;
+}
+
+.intro-image{
+	padding-bottom: 15px;
+}
+
+
